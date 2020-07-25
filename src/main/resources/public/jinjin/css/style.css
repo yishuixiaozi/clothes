@@ -1,0 +1,43 @@
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right:auto
+}
+
+.header .header-logo {
+    height: 54px;
+    width: 164px;
+    margin-top:13px
+}
+
+.header .header-logo a {
+    display: block;
+    height: 44px;
+    width: 164px;
+    text-indent: -9999em;
+    background:url(../images/flower.jpg) no-repeat
+}
+
+.header .header-nav {
+    margin-left:50px;
+}
+
+.header .header-nav .header-nav-item {
+    float: left;
+    height:70px
+}
+
+.header .header-nav .header-nav-link {
+    display: block;
+    font-size: 16px;
+    padding: 0 15px;
+    line-height: 70px;
+    color: #000;
+}
+
+
+
+.fl {
+    float:left
+}

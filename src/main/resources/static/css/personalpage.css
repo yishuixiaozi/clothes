@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/*共通样式*/
+
+/*去除所有的样式的内边距，更容易实现距离控制*/
+blockquote, body, button, caption, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hr, html, input, legend, li, menu, ol, p, pre, table, td, textarea, th, ul {
+    margin: 0;
+    padding:0
+}
+
+body{
+    background:#F9F9F9;
+}
+
+.container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right:auto;
+    background:#eee
+}
+
+
+/*左侧栏目开始*/
+.left-side {
+    width:280px;
+    height:1500px;
+    background:#0cb46a;
+    float: left;
+}
+/*左侧栏目结束*/
+
+/*左侧栏目-个人名开始*/
+.left-top-name {
+    width:100%;
+    height:150px;
+    background:#212121;
+    text-align: center;
+    color: #FFFFFF;
+}
+/*左侧栏目-个人名结束*/
+
+/*姓名-开始*/
+.name-info {
+
+    padding-top: 45px;
+    display: block;
+    font-size: 20px;
+}
+/*姓名-结束*/
+
+/*个人签名-开始*/
+.write-info {
+    display: block;
+    margin-top:10px;
+    font-size:14px;
+    color: #cccccc;
+}
+/*个人签名-结束*/
+
+/*左侧栏目-标签开始*/
+.left-center-type {
+    width:100%;
+    height:300px;
+    background:#83888a;
+    margin-top: 10px;
+}
+/*左侧栏目-标签结束*/
+
+/*左侧栏目-个人信息开始*/
+.left-bottom-info {
+    width:100%;
+    height:500px;
+    background:blueviolet;
+    margin-top: 10px;
+}
+/*左侧栏目-个人信息结束*/
+
+/*右侧内容界面开始*/
+.right-side {
+    width:700px;
+    height:1500px;
+    background:#818496;
+    float: left;
+    margin-left: 20px;
+}
+/*右侧内容界面结束*/
