@@ -7,23 +7,36 @@ blockquote, body, button, caption, dd, div, dl, dt, fieldset, figure, form, h1, 
     padding:0
 }
 
+/*这个是字图图标样式，必须引入该内容才能使用字体突变，例如搜索图标/e601*/
+@font-face {
+    font-family: 'iconfont';
+    src: url("//at.alicdn.com/t/font_1138225_d2i4lmsm0tu.eot");
+    src: url("//at.alicdn.com/t/font_1138225_d2i4lmsm0tu.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1138225_d2i4lmsm0tu.woff2") format("woff2"), url("//at.alicdn.com/t/font_1138225_d2i4lmsm0tu.woff") format("woff"), url("//at.alicdn.com/t/font_1138225_d2i4lmsm0tu.ttf") format("truetype"), url("//at.alicdn.com/t/font_1138225_d2i4lmsm0tu.svg#iconfont") format("svg")
+}
+
+body, button, input {
+    font: 12px/1.14 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    outline:0
+}
+
 body{
-    background:#F9F9F9;
+    background:#F6F8FA;
 }
 
 .container {
-    width: 1000px;
+    width: 1200px;
     margin-left: auto;
     margin-right:auto;
     background:#eee
 }
 
-
 /*左侧栏目开始*/
 .left-side {
     width:280px;
     height:1500px;
-    background:#0cb46a;
+    background:#F6F8FA;
     float: left;
 }
 /*左侧栏目结束*/
@@ -32,7 +45,7 @@ body{
 .left-top-name {
     width:100%;
     height:150px;
-    background:#212121;
+    background:#343434;
     text-align: center;
     color: #FFFFFF;
 }
@@ -59,27 +72,148 @@ body{
 /*左侧栏目-标签开始*/
 .left-center-type {
     width:100%;
-    height:300px;
-    background:#83888a;
+    height:265px;
+    background:#FFFFFF;
     margin-top: 10px;
 }
 /*左侧栏目-标签结束*/
 
+
 /*左侧栏目-个人信息开始*/
 .left-bottom-info {
     width:100%;
-    height:500px;
-    background:blueviolet;
+    height:230px;
+    background:#FFFFFF;
     margin-top: 10px;
+
 }
 /*左侧栏目-个人信息结束*/
 
+
+/*
+    左侧个人微信号-微信公众号信息-开始
+*/
+
+
+.connect_message {
+    width:140px;
+    height: 175px;
+    margin-top: 20px;
+    float: left;
+    /*background:chartreuse;*/
+}
+
+.info_message {
+    font-size: 12px;
+    color: #555;
+    display: block;
+    text-align: center;
+}
+
+.picture_message {
+    width: 100%;
+    height: 140px;
+    background: #83888a;
+}
+
+/*
+    左侧个人微信号-微信公众号信息-结束ß
+*/
+
+
+
 /*右侧内容界面开始*/
 .right-side {
-    width:700px;
+    width:900px;
     height:1500px;
     background:#818496;
     float: left;
     margin-left: 20px;
 }
 /*右侧内容界面结束*/
+
+
+/*左侧导航栏-开始*/
+.site-nav {
+    border-top: none;
+}
+
+.menu {
+    margin-top: 20px;
+    padding-left: 10px;
+    /*text-align:center;*/
+}
+
+.menu .menu-item {
+    display: block;
+    margin: 0;
+}
+
+.menu .menu-item a {
+    display: block;
+    font-size: 13px;
+    padding: 15px 10px;
+    text-align:center;
+    text-decoration: none;
+
+}
+
+.menu .menu-item .fa {
+    margin-left:5px;
+}
+
+.fa-home:before {
+    content:"\e62f";
+}
+
+.fa-th:before {
+    content: "\e65c"
+}
+
+
+/*使用图标必备*/
+.fa {
+    font-family:iconfont !important;
+}
+
+
+/*使用图标必备，iconfont是最上面一个东西的名字*/
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 iconfont;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+
+::selection {
+    background: #262a30;
+    color:#fff
+}
+
+a {
+    width: 60px;
+    color: #555;
+}
+
+
+/*
+    左侧个人微信号-微信公众号信息-开始
+*/
+
+.info_message {
+
+}
+
+.picture_message {
+
+}
+
+/*
+    左侧个人微信号-微信公众号信息-结束ß
+*/
+
+
+
+/*左侧导航栏-结束*/

@@ -29,15 +29,17 @@ public class UserController {
     //直接进入到主界面
     @RequestMapping(value = {"/toMain"})
     public String toMain(){
-        //return "main";
-        return "personalpage";
+        return "main";
+        //return "personalpage";
     }
 
+    //进入到登陆界面
     @RequestMapping(value = {"/toLogin"})
     public String toLogin(){
         System.out.println("1111111111");
         return "login";
     }
+
 
     /*
      *登陆页面中点击登陆按钮，跳转主界面的方法
@@ -94,6 +96,14 @@ public class UserController {
             return "hello";
         }
 
+    }
+
+    //主界面，点击-个人中心-个人主页-个人主页页面
+    @RequestMapping(value = "toPersonalPage")
+    public String toPersonalPage(Model model,HttpSession httpSession){
+
+        System.out.println("--进入到个人中心");
+        return "personalpage";
     }
 
 
