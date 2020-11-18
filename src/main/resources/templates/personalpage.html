@@ -7,6 +7,23 @@
     <meta charset="UTF-8">
     <title>夜留香 ｜ 归档</title>
     <link type="text/css" rel="stylesheet" href="/css/personalpage.css">
+    <script type="text/javascript" src="/js/personalpage.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
+
+    <script type="text/javascript">
+        function test_fadein2() {
+            //渐入渐出方式1 —— 从左上角划出，从右下角 收回
+
+            //alert("testfade");
+            //$("#msg").show("fast");
+            //$("#msg").hide("slow");
+            //渐入渐出方式2—— 从中间向四周展开划出，由四周向中间位置收回
+            //$("#article").fadeIn(600);
+            //alert("2222");
+            //$("#msg").fadeOut();
+        }
+    </script>
+
 </head>
 <body style="padding-top: 0px;">
     <div class="warpper">
@@ -26,42 +43,42 @@
                     <nav class="site-nav">
                         <ul id="menu" class="menu">
                             <li class="menu-item menu-item-home">
-                                <a href="/" rel="section">
+                                <a href="/" rel="section" class="menu-a">
                                     <i class="menu-item-icon fa fa-fw fa-home">
                                     </i>
                                     首页
                                 </a>
                             </li>
                             <li class="menu-item menu-item-home">
-                                <a href="/" rel="section">
+                                <a href="/" rel="section" class="menu-a">
                                     <i class="menu-item-icon fa fa-fw fa-th">
                                     </i>
                                     分类
                                 </a>
                             </li>
                             <li class="menu-item menu-item-home">
-                                <a href="/" rel="section">
+                                <a href="/" rel="section" class="menu-a">
                                     <i class="menu-item-icon fa fa-fw fa-home">
                                     </i>
                                     归档
                                 </a>
                             </li>
                             <li class="menu-item menu-item-home">
-                                <a href="/" rel="section">
+                                <a href="/" rel="section" class="menu-a">
                                     <i class="menu-item-icon fa fa-fw fa-home">
                                     </i>
                                     标签
                                 </a>
                             </li>
                             <li class="menu-item menu-item-home">
-                                <a href="/" rel="section">
+                                <a href="/" rel="section" class="menu-a">
                                     <i class="menu-item-icon fa fa-fw fa-home">
                                     </i>
                                     关于
                                 </a>
                             </li>
                             <li class="menu-item menu-item-home">
-                                <a href="/" rel="section">
+                                <a href="/" rel="section" class="menu-a">
                                     <i class="menu-item-icon fa fa-fw fa-home">
                                     </i>
                                     搜索
@@ -86,9 +103,17 @@
 
                 <div class="left-bottom-message">
                     <ul class="side-bar-nav">
-                        <li class="side-bar-toc">最新更新</li>
-                        <li class="side-bar-overflow">站点概览</li>
+                        <li class="side-bar-toc" id="side-bar-toc" onclick="js_toLatest()">最新更新</li>
+                        <li class="side-bar-overflow" id="side-bar-overflow" onclick="js_toMessage()">站点概览</li>
                     </ul>
+
+                    <div class="article" id="article" onclick="test_fadein()">
+                        最新的更新内容，待。。。
+                    </div>
+
+                    <div class="person" id="person">
+                        个人的一些信息，待。。。
+                    </div>
                 </div>
 
             </div>

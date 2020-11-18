@@ -52,7 +52,7 @@ body {
 
 .header {
     position: relative;
-    height: 70px;
+    height: 73px;
     border-bottom: 1px solid #eee;
     z-index: 99;
     background:#fff
@@ -95,6 +95,8 @@ body {
 .header .header-nav .header-nav-item:hover .header-hover-box {
     display: block;
 }
+
+
 
 .header-hover-list .title {
     color: #000;
@@ -144,7 +146,8 @@ a:hover {
 
 .header .header-nav .header-nav-item {
     float: left;
-    height:70px;
+    height:72px;
+
 }
 
 .header .header-nav .header-nav-link {
